@@ -12,6 +12,14 @@ The figure shows the different measured samples measured and the map of the pigm
 
 We used the LAMBDA 1050+ UV/Vis/NIR Spectrophotometer in the 250nm~2500nm range (UV to infrared).
 
+the data white balance equation taking into account dark noise is given by:
+
+$$
+I_w(i, j) = \frac{I(i, j) - d(i, j)}{w(i, j) - d(i, j)}
+$$
+
+where $I_w(i, j)$ is the white-balanced intensity value, $I(i, j)$ is the original intensity value, $d(i, j)$ is the dark noise at pixel $(i, j)$, and $w(i, j)$ is the white balance coefficient at pixel $(i, j)$.
+
 Example of resulting spectra : 
 <p align="center">
   <img src="https://github.com/YasminaDjelil/White-balance-of-Hyperspectral-spectra/assets/97749412/ec4fa619-6d67-4ae9-a7ef-ca8077d461b0" width="40%" >
